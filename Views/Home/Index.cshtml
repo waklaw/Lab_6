@@ -1,0 +1,30 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Uni</title>
+</head>
+<body>
+    <div>
+        <h3>Groups</h3>
+        <table>
+            <tr>
+                <td><p>ID</p></td>
+                <td><p> Group Name</p></td>
+                <td></td>
+            </tr>
+            @foreach (var b in ViewBag.Groups)
+            {
+                <tr>
+                    <td><p>@b.Group_id</p></td>
+                    <td><p>@b.GroupName</p></td>
+                </tr>
+            }
+        </table>
+        <p><a href="/Home/AddPerson">Add student</a></p>
+    </div>
+</body>
+</html>
